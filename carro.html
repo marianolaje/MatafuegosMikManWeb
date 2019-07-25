@@ -3,31 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="jsd.js"></script>
+    <script src="js.js"></script>
     <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="form.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Mik-Man</title>
   </head>
-  <body>
+  <body onload="carro()">
     <section id="compraTotal">
       <div id="articulos">
         <div id="nombreArticulo">
-          <p>2 Matafuegos 5kg</p>
-          <p>Funda 5kg</p>
+          <p id="textoA"></p>
+          <p id="textoB"></p>
+          <p id="textoC"></p>
+          <p id="textoD"></p>
+          <p id="textoE"></p>
+          <p id="textoF"></p>
         </div>
         <div id="precioArticulos">
-          <p>$2400</p>
-          <p>$430</p>
+          <p id="totA"></p>
+          <p id="totB"></p>
+          <p id="totC"></p>
+          <p id="totD"></p>
+          <p id="totE"></p>
+          <p id="totF"></p>
         </div>
       </div>
       <div id="total">
-        <h5>TOTAL: $2830</h5>
+        <h5 id="totalCarro">TOTAL: $2830</h5>
       </div>
-      <div id="confirmar" class="button">
+      <a href="index.html"><div id="confirmar" class="button" onclick="confirmarCompra()">
         <p>CONFIRMAR</p>
-      </div>
+      </div></a>
     </section>
     <nav>
       <div id="titulo">
@@ -37,7 +44,6 @@
         <ul>
           <li><a href="index.html">Productos</a></li>
           <li><a href="servicio.html">Servicios</a></li>
-          <li><a href="franquicias.html">Franquicias</a></li>
           <li><a href="carro.html">Carro</a></li>
         </ul>
       </div>
@@ -61,19 +67,6 @@
           <div class="costo">
             <p><strong id="precioA">$1200</strong></p>
           </div>
-          <div class="check">
-            <label class="container">
-              <p>Agregar</p>
-              <input id="checkA" type="checkbox" onclick="mostrarCant('checkA','cantidadA', 'numA')">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div id="cantidadA">
-            <div><p>Cant:</p> </div>
-            <div id="menosA" onclick="disminuirCant('numA')"><p><</p> </div>
-            <div><p id="numA">1</p> </div>
-            <div id="masA" onclick="aumentarCant('numA')"><p>></p> </div>
-          </div>
         </div>
       </div>
 
@@ -89,19 +82,6 @@
           <div class="costo">
             <p><strong id="precioB">$600</strong></p>
           </div>
-          <div class="check">
-            <label class="container">
-              <p>Agregar</p>
-              <input id="checkB" type="checkbox" onclick="mostrarCant('checkB','cantidadB', 'numB')">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div id="cantidadB">
-            <div><p>Cant:</p> </div>
-            <div id="menosB" onclick="disminuirCant('numB')"><p><</p> </div>
-            <div><p id="numB">1</p> </div>
-            <div id="masB" onclick="aumentarCant('numB')"><p>></p> </div>
-          </div>
         </div>
       </div>
 
@@ -116,19 +96,6 @@
         <div class="precio">
           <div class="costo">
             <p><strong id="precioC">$430</strong></p>
-          </div>
-          <div class="check">
-            <label class="container">
-              <p>Agregar</p>
-              <input id="checkC" type="checkbox" checked onclick="mostrarCant('checkC','cantidadC', 'numC')">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div id="cantidadC">
-            <div><p>Cant:</p> </div>
-            <div id="menosC" onclick="disminuirCant('numC')"><p><</p> </div>
-            <div><p id="numC">1</p> </div>
-            <div id="masC" onclick="aumentarCant('numC')"><p>></p> </div>
           </div>
         </div>
       </div>
@@ -147,19 +114,6 @@
           <div class="costo">
             <p><strong id="precioD">$1200</strong></p>
           </div>
-          <div class="check">
-            <label class="container">
-              <p>Agregar</p>
-              <input id="checkD" type="checkbox" onclick="mostrarCant('checkD','cantidadD', 'numD')">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div id="cantidadD">
-            <div><p>Cant:</p> </div>
-            <div id="menosD" onclick="disminuirCant('numD')"><p><</p> </div>
-            <div><p id="numD">1</p> </div>
-            <div id="masD" onclick="aumentarCant('numD')"><p>></p> </div>
-          </div>
         </div>
       </div>
 
@@ -175,19 +129,6 @@
           <div class="costo">
             <p><strong id="precioE">$600</strong></p>
           </div>
-          <div class="check">
-            <label class="container">
-              <p>Agregar</p>
-              <input id="checkE" type="checkbox" onclick="mostrarCant('checkE','cantidadE', 'numE')">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div id="cantidadE">
-            <div><p>Cant:</p> </div>
-            <div id="menosE" onclick="disminuirCant('numE')"><p><</p> </div>
-            <div><p id="numE">1</p> </div>
-            <div id="masE" onclick="aumentarCant('numE')"><p>></p> </div>
-          </div>
         </div>
       </div>
 
@@ -202,19 +143,6 @@
         <div class="precio">
           <div class="costo">
             <p><strong id="precioF">$430</strong></p>
-          </div>
-          <div class="check">
-            <label class="container">
-              <p>Agregar</p>
-              <input id="checkF" type="checkbox" onclick="mostrarCant('checkF','cantidadF', 'numF')">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div id="cantidadF">
-            <div><p>Cant:</p> </div>
-            <div id="menosF" onclick="disminuirCant('numF')"><p><</p> </div>
-            <div><p id="numF">1</p> </div>
-            <div id="masF" onclick="aumentarCant('numF')"><p>></p> </div>
           </div>
         </div>
       </div>

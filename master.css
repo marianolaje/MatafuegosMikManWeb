@@ -1,8 +1,8 @@
-/*VARIOS*/
-/*body{
-  width: 2000px;
-  overflow-x: hidden;
-}*/
+body{
+  width: 1366px;
+  overflow-x:hidden;
+}
+
 /*----------BOTON FLOTANTE-------------*/
 #botonFlotante{
   position: fixed;
@@ -42,14 +42,28 @@
   position: fixed;
   top: 200px;
   left: 1140px;
-  width: 200px;
-  height: 180px;
+  width: 205px;
+  height: 50%;
   background-color: transparent;
   border: 1px #d0d1c8 solid;
   border-radius: 5%;
   z-index: 999;
 }
-
+#nombreArticulo{
+  width: 150px;
+  float: left;
+}
+#nombreArticulo p{
+  height: 50px;
+}
+#precioArticulos{
+  margin-top: 10px;
+  width: 50px;
+  float: left;
+}
+#precioArticulos p{
+  height: 50px;
+}
 
 
 /*-----BARRA NAVEGADOR------*/
@@ -83,7 +97,7 @@
 #navegador li a {
   height: 60px;
   font-weight: bold;
-  width: 327px;
+  width: 437px;
   display: block;
   color: #b7b29a;
   text-align: center;
@@ -114,8 +128,15 @@
 
 
 /*--------CONTENIDO PAGINA ---------*/
-#contA, #contB, #contC, #contD, #contE, #contF{
-  display: block;
+#textoA, #textoB, #textoC, #textoD, #textoE, #textoF, {
+  display: none;
+}
+#precioA, #precioB, #precioC, #precioD, #precioE, #precioF, {
+  display: none;
+}
+
+#contB, #contC, #contD, #contE, #contF{
+  display: none;
 }
 
 #cantidadA, #cantidadB, #cantidadC, #cantidadD, #cantidadE, #cantidadF{
@@ -127,7 +148,9 @@
   margin-right: 5px;
   cursor: pointer;
 }
-
+#confirmar{
+  cursor: pointer;
+}
 
 
 .imgYTexto{
