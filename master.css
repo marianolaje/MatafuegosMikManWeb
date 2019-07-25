@@ -1,0 +1,272 @@
+/*VARIOS*/
+/*body{
+  width: 2000px;
+  overflow-x: hidden;
+}*/
+/*----------BOTON FLOTANTE-------------*/
+#botonFlotante{
+  position: fixed;
+  top: 540px;
+  left: 1100px;
+  width: 220px;
+  background-color: transparent;
+  border: 1px #d0d1c8 solid;
+  border-radius: 40%;
+  z-index: 999;
+}
+#imgFlotante img{
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+#montoFlotante{
+  margin-top: 10px;
+  float: left;
+  margin-left: 30px;
+}
+#nombreArticulo{
+  float: left;
+}
+#precioArticulos{
+  float: right;
+}
+#total{
+  float: left;
+}
+
+/*----------TOTAL FLOTANTE---------------*/
+/*----------BOTON FLOTANTE-------------*/
+#compraTotal{
+  position: fixed;
+  top: 200px;
+  left: 1140px;
+  width: 200px;
+  height: 180px;
+  background-color: transparent;
+  border: 1px #d0d1c8 solid;
+  border-radius: 5%;
+  z-index: 999;
+}
+
+
+
+/*-----BARRA NAVEGADOR------*/
+#titulo img{
+  height: 100px;
+  margin-left: 540px;
+}
+#titulo{
+  background-color: #ffe100;
+}
+#tituloPag{
+  margin-top: 30px;
+  margin-left: 13px;
+}
+
+#navegador ul {
+  /*position: fixed;*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  overflow: hidden;
+  background-color: #666358;
+}
+
+#navegador li {
+  float: left;
+  height: 60px;
+}
+
+#navegador li a {
+  height: 60px;
+  font-weight: bold;
+  width: 327px;
+  display: block;
+  color: #b7b29a;
+  text-align: center;
+  margin-left: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#navegador li a:hover{
+  color: #a5a129;
+}
+#navegador li:hover{
+  background-color: #56534b;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+
+#tituloPag{
+  width: 1300px;
+  text-align: center;
+  color: #b7b29a;
+
+}
+
+
+/*--------CONTENIDO PAGINA ---------*/
+#contA, #contB, #contC, #contD, #contE, #contF{
+  display: block;
+}
+
+#cantidadA, #cantidadB, #cantidadC, #cantidadD, #cantidadE, #cantidadF{
+  visibility: hidden;
+}
+
+#cantidadA div p, #cantidadB div p, #cantidadC div p, #cantidadD div p, #cantidadE div p, #cantidadF div p{
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+
+.imgYTexto{
+  margin-left: 280px;
+  margin-top: 50px;
+  width: 850px;
+  height: 170px;
+  /*background-color: red;*/
+}
+.img{
+  margin: 10px;
+  width: 100px;
+  height: 150px;
+  /*background-color: blue;*/
+  float: left;
+}
+.img img{
+  width: 80px;
+  height: 150px;
+}
+.texto{
+  margin: 10px;
+  width: 570px;
+  height: 150px;
+  /*background-color: yellow;*/
+  float: left;
+}
+.precio{
+  margin: 10px;
+  width: 110px;
+  height: 150px;
+  /*background-color: yellow;*/
+  float: left;
+}
+.costo{
+  width: 110px;
+  height: 68px;
+  /*background-color: blue;*/
+  margin-top: 5px;
+}
+.costo p{
+  font-size: 30px;
+  text-align: center;
+}
+.check{
+  width: 110px;
+  height: 68px;
+  /*background-color: blue;*/
+  margin-top: 5px;
+}
+
+
+
+/*------------CHECKBOX-----------*/
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+label p{
+  margin-left: 15px;
+
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.button {
+  background-color: #ffe100; /* Green */
+  border: none;
+  color: #666358;
+  margin-left: 1px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 7px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:bold;
+}
