@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js.js"></script>
     <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="form.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Mik-Man</title>
@@ -32,7 +33,7 @@
       <div id="total">
         <h5 id="totalCarro">TOTAL: $2830</h5>
       </div>
-      <a href="index.html"><div id="confirmar" class="button" onclick="confirmarCompra()">
+      <a href="#formTitulo"><div id="confirmar" class="button">
         <p>CONFIRMAR</p>
       </div></a>
     </section>
@@ -148,5 +149,52 @@
       </div>
 
     </section>
+
+    <section class="hojas">
+      <div class="contenedor"><a name="sextaHoja"></a>
+        <div class="Titulo">
+          <h1 id="textTitulo6">Datos de Envio</h1>
+        </div>
+        <div class="wrap-contact100">
+    			<form action="formulario.php" method="POST" class="contact100-form validate-form flex-sb flex-w">
+
+    				<div class="wrap-input100 validate-input aaa" data-validate = "El campo NOMBRE es requerido">
+    					<input id="formTitulo" class="input100" type="text" name="formTitulo" placeholder="Nombre del propietario">
+    					<span class="focus-input100"></span>
+    				</div>
+
+            <div class="wrap-input100 validate-input aaa" data-validate = "El campo Direccion es requerido">
+    					<input id="formDire" class="input100" type="text" name="formDire" placeholder="Direccion">
+    					<span class="focus-input100"></span>
+    				</div>
+
+            <div class="wrap-input100 validate-input aaa" data-validate = "El campo Nombre/Razon Social es requerido">
+              <input id="formRazon" class="input100" type="text" name="formRazon" placeholder="Nombre/Razon Social a facturar">
+              <span class="focus-input100"></span>
+            </div>
+
+    				<div class="wrap-input100 validate-input" data-validate = "El campo MENSAJE es requerido">
+    					<input id="formMail" class="input100" name="formMail" placeholder="Email de contacto"></input>
+    					<span class="focus-input100"></span>
+    				</div>
+
+            <div class="wrap-input100 validate-input aaa" data-validate = "El campo Nombre/Razon Social es requerido">
+              <input id="formTel" class="input100" type="text" name="formTel" placeholder="Telefono de contacto">
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "El campo MENSAJE es requerido">
+              <textarea id="formTexto" class="input100" name="mensaje" placeholder="Alguna especificación que quieras hacernos?"></textarea>
+              <span class="focus-input100"></span>
+            </div>
+
+    				<div class="container-contact100-form-btn">
+    					<input id="formBoton" class="contact100-form-btn" type="submit" id="send" value="Enviar">
+    				</div>
+    			</form>
+    		</div>
+      </div>
+    </section>
+
   </body>
 </html>
