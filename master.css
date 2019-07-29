@@ -3,6 +3,13 @@ body{
   overflow-x:hidden;
 }
 
+video{
+  width: 800px;
+  height: 800px;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+
 /*----------BOTON FLOTANTE-------------*/
 #botonFlotante{
   position: fixed;
@@ -128,22 +135,22 @@ body{
 
 
 /*--------CONTENIDO PAGINA ---------*/
-#textoA, #textoB, #textoC, #textoD, #textoE, #textoF, {
+#textoA, #textoB, #textoC, #textoD, #textoE, #textoF, #textoAs, #textoBs{
   display: none;
 }
-#precioA, #precioB, #precioC, #precioD, #precioE, #precioF, {
-  display: none;
-}
-
-#contB, #contC, #contD, #contE, #contF{
+#precioA, #precioB, #precioC, #precioD, #precioE, #precioF, #precioAs, #precioBs{
   display: none;
 }
 
-#cantidadA, #cantidadB, #cantidadC, #cantidadD, #cantidadE, #cantidadF{
+#contA, #contB, #contC, #contD, #contE, #contF, #contAs, #contBs{
+  display: none;
+}
+
+#cantidadA, #cantidadB, #cantidadC, #cantidadD, #cantidadE, #cantidadF, #cantidadAs, #cantidadBs{
   visibility: hidden;
 }
 
-#cantidadA div p, #cantidadB div p, #cantidadC div p, #cantidadD div p, #cantidadE div p, #cantidadF div p{
+#cantidadA div p, #cantidadB div p, #cantidadC div p, #cantidadD div p, #cantidadE div p, #cantidadF div p, #cantidadAs div p, #cantidadBs div p{
   float: left;
   margin-right: 5px;
   cursor: pointer;

@@ -194,6 +194,7 @@ function carro(){
   document.getElementById('totalCarro').innerHTML = 'TOTAL: $' + total
 }
 
+
 function confirmarCompra(){
   var direccion = prompt("Ingrese la dirección de envío")
   if (direccion != null) {
@@ -201,4 +202,20 @@ function confirmarCompra(){
   }
   storage.clear()
   location.reload()
+}
+
+
+function servicio(){
+  var subPrecioAs = document.getElementById('precioAs').innerHTML
+  var precioAs = parseInt(subPrecioAs.substring(1, 6))
+  var prodAs = parseInt(document.getElementById('numAs').innerHTML)
+  totalAs = prodAs * precioAs
+
+  var subPrecioBs = document.getElementById('precioBs').innerHTML
+  var precioBs = parseInt(subPrecioBs.substring(1, 6))
+  var prodBs = parseInt(document.getElementById('numBs').innerHTML)
+  totalBs = prodBs * precioBs
+
+  var totalAs = parseInt(storage.getItem("totalAs"))
+  var totalBs = parseInt(storage.getItem("totalBs"))
 }

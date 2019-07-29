@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Mik-Man</title>
+  </head>
+  <body onload="servicio()">
+
+    <a href="carro.html">
+      <section id="botonFlotante">
+        <div id="imgFlotante">
+          <img src="img/cart.png" alt="">
+        </div>
+        <div id="montoFlotante">
+          <h1 id="totalTotal">$0</h1>
+        </div>
+      </section>
+    </a>
+
+    <nav>
+      <div id="titulo">
+        <img src="img/logo.jpg" alt="">
+      </div>
+      <div id="navegador">
+        <ul>
+          <li><a href="index.html">Productos</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="carro.html">Carro</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="tituloPag">
+      <h1>Servicios</h1>
+    </section>
+
+    <section>
+
+      <div class="imgYTexto">
+        <div class="img">
+          <img src="img/matafuego.jpg" alt="">
+        </div>
+        <div class="texto">
+          <h5>Recarga de Matafuegos</h5>
+          <p>Apto para: <strong>TODO TIPO DE FUEGO</strong></p>
+          <p>Clase: A B C</p>
+          <p>Capacidades: 1kg - 2.5kg - 5kg - 10kg - 25kg - 50kg - 70kg - 100kg</p>
+        </div>
+        <div class="precio">
+          <div class="costo">
+            <p><strong id="precioAs">$300</strong></p>
+          </div>
+          <div class="check">
+            <label class="container">
+              <p>Agregar</p>
+              <input id="checkAs" type="checkbox" onclick="mostrarCant('checkAs','cantidadAs', 'numAs')">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div id="cantidadAs">
+            <div><p>Cant:</p> </div>
+            <div id="menosA" onclick="disminuirCant('numAs')"><p><</p> </div>
+            <div><p id="numAs">1</p> </div>
+            <div id="masA" onclick="aumentarCant('numAs')"><p>></p> </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgYTexto">
+        <div class="img">
+          <img src="img/co2.jpg" alt="">
+        </div>
+        <div class="texto">
+          <h5>Recarga de Garrafa de CO2</h5>
+          <p>Capacidades: 1kg - 2.5kg - 5kg - 10kg</p>
+        </div>
+        <div class="precio">
+          <div class="costo">
+            <p><strong id="precioBs">$170</strong></p>
+          </div>
+          <div class="check">
+            <label class="container">
+              <p>Agregar</p>
+              <input id="checkB" type="checkbox" onclick="mostrarCant('checkBs','cantidadBs', 'numBs')">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div id="cantidadBs">
+            <div><p>Cant:</p> </div>
+            <div id="menosB" onclick="disminuirCant('numBs')"><p><</p> </div>
+            <div><p id="numBs">1</p> </div>
+            <div id="masB" onclick="aumentarCant('numBs')"><p>></p> </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </body>
+</html>
